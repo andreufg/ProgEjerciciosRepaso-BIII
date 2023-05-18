@@ -7,8 +7,12 @@ import java.time.LocalDate;
 public class LibroAcademico extends Libro {
     NivelEducativo nivelEducativo;
 
-    public LibroAcademico(String titulo, String autor, LocalDate fechaPublicacion, NivelEducativo nivelEducativo) {
-        super(titulo, autor, fechaPublicacion);
+    public LibroAcademico(String titulo, String autor, LocalDate fechaPublicacion, Editorial editorial,NivelEducativo nivelEducativo) {
+        super(titulo, autor, fechaPublicacion, editorial);
         this.nivelEducativo = nivelEducativo;
+    }
+
+    public NivelEducativo getNivelEducativo() {
+        return nivelEducativo;
     }
 }

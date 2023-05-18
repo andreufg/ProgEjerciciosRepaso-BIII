@@ -7,5 +7,4 @@ import java.util.ArrayList;
 public interface EditorialDAO {
     ArrayList<Editorial> findAll();
     void save(Editorial editorial);
-    void remove(Editorial editorial);
 }
